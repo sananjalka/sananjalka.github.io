@@ -39,6 +39,24 @@
         </aside>
 
         <article>
+            <h1> Hyvää <div style="display:inline;" id="day"></div>, <div style="display:inline;" id="soija"></div>!</h1>
+
+            
+    <script>
+    const weekday = ["sunnuntaita","maanantaita","tiistaita","keskiviikkoa","torstaita","perjantaita","lauantaita"];
+    const d = new Date();
+    let day = weekday[d.getDay()];
+    document.getElementById("day").innerHTML = day;
+    </script>
+    
+    <script>
+    var items = 
+    
+    ['kanssa-redditor', 'skeleton', 'sipuli-ystävä', 'hyvä lukija', 'hyvä vierailija', 'selaaja', 'pelaaja', 'ystävä', 'rakas','hyvä lukija', 'hyvä vierailija', 'selaaja', 'hyvä lukija', 'hyvä vierailija', 'hyvä vierailija', 'selaaja', 'hyvä lukija', 'hyvä vierailija', 'hyvä vierailija', 'selaaja', 'hyvä lukija', 'hyvä vierailija', 'hyvä vierailija', 'selaaja', 'hyvä lukija', 'hyvä vierailija', 'hyvä vierailija'];
+    
+    var item = items[Math.floor(Math.random() * items.length)];
+    document.getElementById("soija").innerHTML = item;
+    </script>
 
 
 
