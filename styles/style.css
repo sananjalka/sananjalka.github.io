@@ -117,6 +117,7 @@ header {
 h1 {
     text-align: center;
     display: block;
+    box-sizing: border-box;
     background: url(hart.png);
     line-height: 2;
     border: dotted red 3px;
