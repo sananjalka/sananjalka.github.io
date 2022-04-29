@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script type="text/javascript" src="/include.js"></script>
+
+		<meta charset="utf-8">
+		
+		<meta lang="fi">
+
+		<meta name="author" content="Rudolf Heiskanen">
+		
+		<meta name="description" content="Etusivu">
+		
+		<link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/etusivu.css">
+
+        <a include-html="/head.html"></a>
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+		
+		<title>Etusivu</title>
+	
+	</head>
+	<body>
+        <div class="banner"></div>
+        <div class="content">
+
+        <aside>
+            <header>
+                <a href="/index.html"><script> include('/header.html', document.currentScript) </script></a>
+            </header>
+            <div class="asidecontent">
+                <script> include('/aside.html', document.currentScript) </script> 
+            </div>
+        </aside>
+
+        <article>
+
+
+
+
+
+        <div id="left">
+            
+            <div>
+                <a href="lofbergs.png"><img src="lofbergs.png"></a>
+                <p id="caption"><em>Vuoden kuva 2022!</em></p>
+    
+            </div>
+        
+            <div id="latest">
+                <h2>Viimeisimmät artikkelit</h2>
+                <hr>
+                <script> include('/latest.html', document.currentScript) </script>
+            </div>
+
+            <div id="kuutti">
+                <h2>Kuutin puheenvuoro</h2>
+                <hr>
+                <p>
+                    <em>Semsettin, bin arabaya, <br>
+                    semsettin, bin arabaya, <br>
+                    semsettin, <br>
+                    arabaya bin.</em>
+                </p>
+            </div>
+
+            
+        </div>
+
+        <div id="right">
+        
+            <div id="esittely">
+                <h2>Esittely</h2>
+                <hr>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius viverra sodales. Sed non posuere mi, nec tempor neque. Praesent tempus, tellus sed lacinia fringilla, massa ligula scelerisque urna, sit amet pulvinar enim velit et metus. Duis ac malesuada ante. Duis vulputate convallis dui, et semper leo dictum ut. Nam scelerisque sem eu mauris dictum tempor. Vivamus ac ipsum in dui pharetra luctus a vulputate metus. </p>
+                <p>
+                Praesent placerat, orci quis ultrices fermentum, arcu lacus rhoncus eros, non molestie risus nibh dapibus leo. Fusce turpis ex, suscipit quis suscipit at, ornare eu ligula. Vivamus tristique lorem ac mauris maximus euismod. Morbi fringilla elit felis, id eleifend lectus pretium vitae. Aenean quis elit dolor. In porta tincidunt efficitur. Nam non viverra lectus, quis consectetur augue. Proin quis dolor vitae tortor scelerisque mollis.
+                </p>
+            </div>
+
+            <div id="loki">
+                <h2>Loki</h2>
+                <hr>
+                <script> include('/loki.html', document.currentScript) </script>
+            </div>
+        </div>
+
+
+
+
+        </article>
+
+        <footer>
+                <script> include('/footer.html', document.currentScript) </script>
+        </footer>
+        
+        </div>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+article ul li div, article ol li div {
+  overflow: auto;
+  display: block;
+}
+
+article ul li div img, article ol li div img {
+  float: right;
+  max-height: 11em;
+}
