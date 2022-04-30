@@ -1,0 +1,5 @@
+#column {
+ columns: 2;
+ column-fill: auto;
+ height: 100%;
+}
