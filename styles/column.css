@@ -1,3 +1,8 @@
+#columnwrapper {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 4rem auto;
+}
 #column {
  columns: 2;
  column-fill: auto;

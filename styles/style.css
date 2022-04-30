@@ -118,7 +118,7 @@ h1 {
     text-align: center;
     display: block;
     background: url(hart.png);
-    line-height: 2;
+    line-height: 2rem;
     border: dotted red 3px;
     margin-top: 2px;
 }
