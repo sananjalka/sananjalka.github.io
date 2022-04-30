@@ -124,7 +124,7 @@ h1 {
 }
 
 @media (hover: none) {
-    article {
+    body {
         font-size: 2rem;
     }
 }
