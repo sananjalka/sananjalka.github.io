@@ -122,3 +122,9 @@ h1 {
     border: dotted red 3px;
     margin-top: 2px;
 }
+
+@media (hover: none) {
+    article {
+        font-size: 2rem;
+    }
+}
