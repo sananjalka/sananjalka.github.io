@@ -95,7 +95,6 @@ footer {
 
     background: rgba(121, 148, 80,1);
     min-height: 3rem;
-    max-height: fit-content;
     border: solid black 2px;
     text-align: center;
 }
@@ -132,11 +131,11 @@ h1 {
 
     header {
         min-height: 2rem;
-        max-height: fit-content;
+        height: fit-content;
     }
 
     h1 {
         min-height: 2rem;
-        max-height: fit-content;    
+        height: fit-content;    
     }
 }
