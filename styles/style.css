@@ -94,7 +94,8 @@ footer {
     grid-row-end: 3;
 
     background: rgba(121, 148, 80,1);
-    height: 3rem;
+    min-height: 3rem;
+    max-height: fit-content;
     border: solid black 2px;
     text-align: center;
 }
@@ -127,5 +128,15 @@ h1 {
 @media (hover: none) {
     body {
         font-size: 2rem;
+    }
+
+    header {
+        min-height: 2rem;
+        max-height: fit-content;
+    }
+
+    h1 {
+        min-height: 2rem;
+        max-height: fit-content;    
     }
 }
