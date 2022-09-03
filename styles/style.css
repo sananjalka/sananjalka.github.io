@@ -102,3 +102,29 @@ h1 {
     border: dotted red 3px;
     margin-top: 2px;
 }
+
+th, td {
+    border: 1px solid black;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.blankrow td {
+    border: none;
+    background-color: white;
+}
+
+.osataulu {
+    color: blue;
+}
+}
+  .osataulu tr:nth-child(odd) {
+    background-color: lightgrey;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: white;
+  }
