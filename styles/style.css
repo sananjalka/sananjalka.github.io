@@ -117,11 +117,8 @@ table {
     background-color: white;
 }
 
-.osataulu {
-    color: blue;
-}
-}
-  .osataulu tr:nth-child(odd) {
+
+  tbody tr:nth-child(odd) {
     background-color: lightgrey;
   }
   
