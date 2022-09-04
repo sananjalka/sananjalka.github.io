@@ -95,10 +95,11 @@ footer p {
 }
 
 h1 {
+    font-size: 2rem;
     text-align: center;
     display: block;
     background: rgba(117,142,183,0.5);
-    line-height: 2rem;
+    line-height: 2.5rem;
     border: solid rgba(0, 0, 0, 0.2) 1px;
     margin-top: 2px;
     font-style: italic;
