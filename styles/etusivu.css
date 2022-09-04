@@ -6,53 +6,44 @@
     display: none;
 }
 
-.blockquote {
-    box-sizing: border-box;
-    text-align: center;
-    background-color: azure;
+.wrapper {
+    background-color: rgba(117,142,183,0.5);
     padding: 1rem;
-    border-left: 1rem solid rgba(117,142,183,0.7);
+}
+
+.blockquote_quote {
+    padding-top: 2rem;
+    font-family: Palatino, serif;
+    font-style: italic;
+    font-size: 1.2rem;
     position: relative;
+    /* background: #ddd; */
 }
 
-.blockquote_text {
-    padding: 0;
-    margin: 0.5rem;
+.blockquote_quote:before {
+  position: absolute;
+  content: open-quote;
+  font-size: 4em;
+  margin-left: -3rem;
+  margin-top: -2rem;
 }
-
-.blockquote_text p {
-    font-family: Palatino;
-    font-size: 1.5rem;
-    padding: 0;
-    margin-bottom: -1rem;
+.blockquote_quote:after {
+  position: absolute;
+  content: close-quote;
+  font-size: 4em;
+  bottom: 0;
+  right: 0;
+  margin-right: -2rem;
+  margin-bottom: -4rem;
 }
-
-.blockquote_text p::before {
-    content: open-quote;
-    font-size: 4rem;
-    font-family: Palatino, serif;
-    font-style: italic;
-    padding: 2rem;
-    vertical-align: -1rem;
-}
-
-.blockquote_text p::after {
-    content: close-quote;
-    font-size: 4rem;
-    font-family: Palatino, serif;
-    font-style: italic;
-    padding: 2rem;
-    vertical-align: -1rem;
+.blockquote_quote p {
+  display: inline;
 }
 
 .signature {
-    font-size: 1.2rem;
+    padding-top: 1rem;
     text-align: right;
-    padding-right: 2rem;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
 }
 
 /** #imag {
