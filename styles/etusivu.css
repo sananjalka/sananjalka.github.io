@@ -16,8 +16,15 @@
 }
 
 .blockquote_text {
+    padding: 0;
+    margin: 0.5rem;
+}
+
+.blockquote_text p {
     font-family: Palatino;
     font-size: 1.5rem;
+    padding: 0;
+    margin-bottom: -1rem;
 }
 
 .blockquote_text p::before {
