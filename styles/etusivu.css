@@ -7,8 +7,9 @@
 }
 
 .wrapper {
-    background-color: rgba(117,142,183,0.5);
+    background-color: rgba(180, 201, 235, 0.349);
     padding: 1rem;
+    border-left: 1rem solid rgba(108, 137, 184, 0.288);
 }
 
 .blockquote_quote {
