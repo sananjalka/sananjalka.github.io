@@ -21,11 +21,15 @@
     /* background: #ddd; */
 }
 
+.blockquote_quote2 {
+    text-align: center;
+}
+
 .blockquote_quote:before {
   position: absolute;
   content: open-quote;
   font-size: 4em;
-  margin-left: -3rem;
+  margin-left: -2rem;
   margin-top: -2rem;
 }
 .blockquote_quote:after {
@@ -34,11 +38,8 @@
   font-size: 4em;
   bottom: 0;
   right: 0;
-  margin-right: -2rem;
+  margin-right: -1rem;
   margin-bottom: -4rem;
-}
-.blockquote_quote p {
-  display: inline;
 }
 
 .signature {
