@@ -32,7 +32,7 @@ aside {
     min-width: fit-content;
     border-right: 1px black solid;
     padding: 2rem;
-    background: linear-gradient(180deg, rgba(117,142,183,1) 0%, rgba(117,142,183,1) 70%, rgba(117,142,183,0) 75%, rgba(117,142,183,0) 100%), url(sky2.png) no-repeat bottom ;
+    background: linear-gradient(180deg, rgba(117,142,183,1) 0%, rgba(117,142,183,1) 65%, rgba(117,142,183,0) 80%, rgba(117,142,183,0) 100%), url(sky2.png) no-repeat bottom ;
     color: white;
 
 }
