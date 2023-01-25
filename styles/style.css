@@ -29,7 +29,7 @@ aside {
     position: fixed;
     height: 100%;
     width: 10rem;
-    min-width: fit-content;
+    /* min-width: fit-content; */
     border-right: 1px black solid;
     padding: 2rem;
     background: linear-gradient(180deg, rgba(117,142,183,1) 0%, rgba(117,142,183,1) 65%, rgba(117,142,183,0) 80%, rgba(117,142,183,0) 100%), url(sky2.png) no-repeat bottom ;
