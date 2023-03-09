@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+        <script type="text/javascript" src="/include.js"></script>
+
+		<meta charset="utf-8">
+		
+		<meta lang="fi">
+
+		<meta name="author" content="Rudolf Heiskanen">
+		
+		<meta name="description" content="TÄYTÄ TÄHÄN SIVUN KUVAUS">
+		
+		<link rel="stylesheet" href="/styles/style.css">
+
+        <a include-html="/head.html"></a>
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+		
+		<title>SIVUN NIMI TÄHÄN</title>
+	
+	</head>
+	<body>
+        <div class="banner"></div>
+        <div class="content">
+
+        <aside>
+            <header>
+                <a href="/index.html"><script> include('/header.html', document.currentScript) </script></a>
+            </header>
+            <div class="asidecontent">
+                <script> include('/aside.html', document.currentScript) </script> 
+            </div>
+        </aside>
+
+        <article>
+
+
+
+
+
+
+        <iframe src="esitysmatriisi.pdf#toolbar=0" width="100%" height="100%"></iframe>
+        </iframe>
+
+
+
+
+
+
+
+            <script> include('article.html', document.currentScript) </script>
+        </article>
+
+        <footer>
+                <script> include('/footer.html', document.currentScript) </script>
+        </footer>
+        
+        </div>
+	</body>
+</html>
