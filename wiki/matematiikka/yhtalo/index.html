@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script type="text/javascript" src="/include.js"></script>
+
+		<meta charset="utf-8">
+		
+		<meta lang="fi">
+
+		<meta name="author" content="Rudolf Heiskanen">
+		
+		<meta name="description" content="Yhtälön perusteet">
+		
+		<link rel="stylesheet" href="/styles/style.css">
+
+        <a include-html="/head.html"></a>
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+		
+		<title>Yhtälö</title>
+	
+	</head>
+	<body>
+        <div class="banner"></div>
+        <div class="content">
+
+        <aside>
+            <header>
+                <a href="/index.html"><script> include('/header.html', document.currentScript) </script></a>
+            </header>
+            <div class="asidecontent">
+                <script> include('/aside.html', document.currentScript) </script> 
+            </div>
+        </aside>
+
+        <article>
+
+
+
+
+
+
+<h1>Yhtälön perusteet</h1>
+
+<h2>Mikä yhtälö on?</h2>
+<hr>
+
+<p>Yhtälö on väite kahden asian samanarvoisuudesta. Samanarvoisuutta merkitään yhtäkuin-merkillä "=". Esimerkiksi väite \( 2+2 = 4 \) on yhtälö. Yhtälö on myös työkalu, jota käytetään, kun halutaan selvittää jonkin muuttujan arvo. Muuttuja merkitsee jotain, jonka arvoa ei vielä tiedetä, ja niitä merkitään tyypillisesti kirjaimilla kuten x, y, a ja b. </p>
+
+<h2>Kuinka yhtälö ratkaistaan ja esimerkki</h2>
+<hr>
+
+<p>Yhtälöä muuttujan arvon ratkaisemiseen tarvitsemme esimerkiksi, jos tiedämme kertolaskun lopputuloksen ja toisen kerrottavista, mutta emme toista. Jos haluaisimme vaikkapa laskea, kuinka monta tuntia Ville-Gallen olisi tehtävä töitä saadakseen kasaan 120€ jos hänen tuntipalkkansa on 12€, olisi meillä tiedossa kertolaskun tulo (120€) ja toinen kerrottavista (12€), mutta ei toista. Tämä lasku merkittäisiin seuraavasti:</p>
+
+<p>
+\[
+12*x=120
+\]
+</p>
+
+<p>Tässä tuntien määrä, jota emme vielä tunne merkitään muuttujalla x. Kysymyksemme kuului, kuinka monta tuntia Ville-Gallen olisi tehtävä töitä. Siispä meidän täytyy ratkaista muuttujan x arvo, sehän kuvaa tuntien määrää. </p>
+
+<p>Toisin sanoen, tavoitteenamme muovata yhtälö muotoon, jossa yhtäkuin-merkin toisella puolella on x ja toisella puolella jokin vakiotermi eli "tavallinen" luku (ei muuttuja), tapaan: \( x = 4 \). Seuraavaksi käydään Ville-Gallen esimerkin kanssa läpi, kuinka tämä tapahtuu.
+</p>
+<p> Olemme nyt siis tilanteessa:
+
+\[ 12*x=120 \]
+
+Jotta saisimme yhtälön muotoon \( x = vakiotermi \), on saatava x:n puolella yhtäkuin-merkkiä olevat vakiotermit poistettua. </p>
+
+<p>Emme kuitenkaan voi mielivaltaisesti poistaa yhtälöstä mitään, sillä silloin yhtälön esittämä väittämä (vasen puoli on <strong>täsmälleen</strong> saman arvoinen kuin oikea puoli) ei pitäisi enää paikkaansa. Tämän rajoitteen kanssa voimme kuitenkin toimia tekemällä täsmälleen saman toimenpiteen yhtäkuin-merkin molemmille puolille; tällöinhän väittämä puolten samanarvoisuudesta pitää paikkansa toimenpiteen jälkeenkin. </p>
+
+<p> Ville-Gallen tapauksessa tämä toimenpide olisi jakaa yhtäkuin-merkin molemmat puolet luvulla 12. Tämä sen takia, että tavoitteenamme on saada muuttuja x vasemmalle puolelle yksinään. Yhtälössä \( 12*x=112 \) muuttuja x on kerrottu luvulla 12, ja kertomisen vastatoimenpide on jakaminen. Tehkäämme siis näin.
+</p>
+
+<p>
+    \[ 12*x=120 \parallel :12 \]
+    \[ 12*x:12=120:12 \]
+    \[ x=120:12 \]
+    \[ x = 10 \]
+</p>
+
+<p>
+    Yhtälön lopussa merkintä \( \parallel \) merkitsee, että sen jälkeen kirjoitettu laskutoimitus toteutetaan molemmille puolille yhtäkuin-merkkiä. Jos muuttujan puolella olisi positiivinen luku, merkittäisiin pystyviivojen jälkeen vähennyslasku, jos taas negatiivinen luku, merkittäisiin pluslasku. Kertojan poistamiseksi merkitään jakolasku ja jakajan poistamiseksi merkitään kertolasku.</p>
+    
+    <p>Kun Ville-Gallen tapauksessa jaettiin molemmat puolet luvulla 12, poistuu kertoja 12 muuttujan x puolelta, ja vakiotermi 120 jaetaan luvulla 12 omalla puolellaan. Näin saadaan yhtälö muotoon \( x = vakiotermi \). Ville-Gallen pulmassa muuttujan x arvo on siis 10. Alkuperäinen kysymyksemme kuului: kuinka monta tuntia Ville-Gallen olisi tehtävä töitä saadakseen kasaan 120€ kahdentoista euron tuntipalkalla. Nyt meillä on vastaus: 10 tuntia.
+</p>
+
+<p>
+    Merkitään vielä lopuksi vastaus samaan tyyliin kuin ylioppilaskokeessa, eli vastataan alkuperäiseen esitettyyn kysymykseen sanallisesti: <br><br>
+
+    <blockquote> VASTAUS: <br>
+    Saadakseen kasaan 120€ tuntipalkalla 12€/h Ville-Gallen olisi tehtävä töitä 10 tuntia.
+    </blockquote>
+</p>
+
+<h2>"Toinen" ratkaisutapa</h2>
+<hr>
+
+<p>
+    Ainakin omat matematiikanopettajani ovat esittäneet oppilaille myös vaihtoehtoisen tavan \( \parallel \)-merkin käytölle ja yhtäkuin-merkin molemmille puolille saman toimenpiteen tekemiselle. Tapa on kuulunut näin:
+</p>
+<p>
+    Kun tarvitsee hankkiutua eroon muuttujan puolella yhtäkuin-merkkiä olevista vakiotermeistä, kertojista ja jakajista, voidaan ne suoraan siirtää toiselle puolelle yhtäkuin-merkkiä, seuraavalla säännöllä: positiiviset vakiotermit muutetaan negatiivisiksi, negatiiviset vakiotermit muutetaan positiivisiksi, kertojat jakajiksi ja jakajat kertojiksi. Esimerkki:
+</p>
+<p>
+    \[ x+10=6 \] \[ x=6-10 \] \[ x = -4\]
+</p>
+<p>Esimerkissä ensin siirrettiin 12 toiselle puolelle sen matkalla muuttuen negatiiviseksi ja sitten siirrettiin kertoja 3 toiselle puolelle sen muuttuen jakajaksi. Tämäkin keino ratkaista yhtälö toimii. Opettajat ovat kuitenkin tehneet virheen esitellessään tämän "toisena tapana" ratkaista yhtälö.</p>
+
+<p>Yhtälön voi ratkaista vain tekemällä samat toimenpiteet yhtäkuin-merkin molemmille puolille. Tämä "toinen" tapa on nimittäin sama kuin ensimmäinen, siinä vain jätetään välivaiheita pois. Seuraavaksi havainnollistan väittämäni.</p>
+
+<p>Jos merkitsisimme edellisen esimerkin alkuperäisellä näyttämälläni tavalla, se tapahtuisi näin:
+    \[ x+10=6 \]
+    \[ x+10=6 \parallel -10 \]
+    \[ x+10-10=6-10 \]
+    \[x=6-10 \]
+    \[ x=-4 \]
+Jos tästä esimerkistä jätettäisiin pois toinen ja kolmas rivi, huomattaisiin, että lasku näyttää samalta kuin tämä "toinen tapa". Siinä siis jätetään merkitsemättä pystyviivat ja merkitään suoraan pystyviivojen määräämä laskutoimitus yhtäkuin-merkin muuttujattomalle puolelle.
+</p>
+<p> Sama toimenpide yhtälönratkaisussa voidaan hyväksytysti merkitä seuraavilla välivaiheilla:</p>
+<ul>
+    <li>Merkitään pystyviivat ja kirjoitetaan seuraavassa välivaiheessa niiden määräämät laskutoimitukset yhtäkuin-merkin molemmille puolille.</li>
+    <li>Merkitään pystyviivat, pyyhitään muuttujan puoleinen vakiotermi, kertoja tai jakaja merkitsemättä sitä ja merkitään muuttujattoman puolen laskutoimitus.</li>
+    <li>Pyyhitään muuttujan puoleinen vakiotermi, kertoja tai jakaja ja merkitään muuttujattoman puolen laskutoimitus ("Siirretään vastaluvuksi").</li>
+    <li>Ei merkitä mitään näistä vaiheista.</li>
+</ul>
+<p>Kaikki näistä ovat ainakin ylioppilaskokeessa hyväksyttyjä, sillä nämä välivaiheet ovat niin pieniä isomman laskun mittakaavassa ja niiden merkitseminen voi olla sekä kirjoittalle että laskun tarkistajalle vaivalloista.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script> include('article.html', document.currentScript) </script>
+        </article>
+
+        <footer>
+                <script> include('/footer.html', document.currentScript) </script>
+        </footer>
+        
+        </div>
+	</body>
+</html>

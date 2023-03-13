@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script type="text/javascript" src="/include.js"></script>
+
+		<meta charset="utf-8">
+		
+		<meta lang="fi">
+
+		<meta name="author" content="Rudolf Heiskanen">
+		
+		<meta name="description" content="TÄYTÄ TÄHÄN SIVUN KUVAUS">
+		
+		<link rel="stylesheet" href="/styles/style.css">
+
+        <a include-html="/head.html"></a>
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+		
+		<title>Peruslaskutoimitusten kaavoja</title>
+	
+	</head>
+	<body>
+        <div class="banner"></div>
+        <div class="content">
+
+        <aside>
+            <header>
+                <a href="/index.html"><script> include('/header.html', document.currentScript) </script></a>
+            </header>
+            <div class="asidecontent">
+                <script> include('/aside.html', document.currentScript) </script> 
+            </div>
+        </aside>
+
+        <article>
+
+            <h1>Peruslaskutoimitusten kaavoja</h1>
+
+            <h3 id="laskujarjestys">Laskujärjestys</h3>
+
+            <blockquote>
+                <ol>
+                  <li>Sulkeet</li> 
+                  <li>Potenssilaskut</li>
+                  <li>Kerto- ja jakolaskut</li>
+                  <li>Yhteen- ja vähennyslaskut</li>
+                </ol>
+            </blockquote>
+
+            <hr>
+
+            <h3 id="murtoluvut">Murtoluvut</h3>
+
+            <blockquote>
+                <h4>Laventaminen ja supistaminen:</h4>
+                <p>
+                    \[\frac{a}{b}=\frac{ka}{kb}{,}\ k\ne0\]
+
+                    \(k\):n ollessa suurempi kuin 1, kyse on laventamisesta, joka merkitään vasemmalle puolelle. Kun taas \(k\) on pienempi kuin 1, on kyse supistamisesta, joka merkitään oikealle puolelle. Supistamisen voi myös ykköstä pienemmällä luvulla kertomisen sijaan ajatella jakamisena.
+                </p>
+
+                <h4>Yhteenlasku</h4>
+                <p>
+                    Kaavaan sisältyy lavennus samannimisiksi. Vaihtoehtoisesti luvut voidaan ensin laventaa samannimisiksi ja sitten laskea osoittajat yhteen.
+
+                    \[\frac{a}{b}+\frac{c}{d}=\frac{ad+bc}{bd}\]
+                </p>
+
+                <h4>Vähennyslasku</h4>
+                <p>
+                    Vähennyslaskua koskee sama kuin yhteenlaskuakin.
+
+                    \[\frac{a}{b}-\frac{c}{d}=\frac{ad-bc}{bd}\]
+                </p>
+
+                <h4>Kertolasku</h4>
+                <p>
+                    \[\frac{a}{b}\cdot\frac{c}{d}=\frac{ac}{bd}\]
+                </p>
+
+                <h4>Jakolasku</h4>
+                <p>
+                    \[\frac{a}{b}:\frac{c}{d}=\frac{ad}{bc}\]
+
+                    Niinsanottu ristiinkertominen. Voidaan myös ajatella, että jakaja käännetään käänteisluvukseen, jolla sitten kerrotaan jaettava.
+                </p>
+            </blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script> include('article.html', document.currentScript) </script>
+        </article>
+
+        <footer>
+                <script> include('/footer.html', document.currentScript) </script>
+        </footer>
+        
+        </div>
+	</body>
+</html>

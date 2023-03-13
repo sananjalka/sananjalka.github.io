@@ -1,0 +1,130 @@
+/* typografia */
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 14rem auto;
+    grid-template-rows: auto 4rem;
+    height: 100%;
+}
+
+aside {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    position: fixed;
+    height: 100%;
+    width: 10rem;
+    /* min-width: fit-content; */
+    border-right: 1px black solid;
+    padding: 2rem;
+    background: linear-gradient(180deg, rgba(117,142,183,1) 0%, rgba(117,142,183,1) 65%, rgba(117,142,183,0) 80%, rgba(117,142,183,0) 100%), url(sky2.png) no-repeat bottom ;
+    color: white;
+
+}
+
+aside a {
+    color: white;
+    font-style: italic;
+}
+
+.asidecontent div ul  {
+    margin-left: 0;
+    padding-left: 1rem;
+}
+
+aside h3 {
+    text-decoration:underline
+}
+
+article {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   /*  border: 1px solid black; */
+    padding: 2rem;
+    padding-bottom: 0;
+    padding-left: 3rem;
+    height: 100%;
+    max-width: 50rem;
+}
+
+header a {
+    display: block;
+    border: red dotted 3px;
+    margin: 0;
+    text-align: center;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    background: url(hart.png);
+    color: rgb(18, 52, 107);
+    font-style: normal;
+    text-decoration: none;
+}
+
+footer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    padding-left: 3rem;
+   /* border-top: 1px solid black; */
+    text-align: center;
+    max-width: 50rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    background: rgba(117,142,183,0.5);
+    line-height: 2.5rem;
+    border: solid rgba(0, 0, 0, 0.2) 1px;
+    margin-top: 2px;
+    font-style: italic;
+    font-family: serif;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.blankrow td {
+    border: none;
+    background-color: white;
+}
+
+
+  tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: white;
+  }
